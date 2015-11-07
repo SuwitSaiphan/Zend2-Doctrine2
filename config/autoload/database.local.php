@@ -7,9 +7,9 @@ return array(
         'params' => array(
           'host'     => 'localhost',
           'port'     => '3306',
-          'user'     => 'root',
-          'password' => '',
-          'dbname'   => 'zf-doctrine'
+          'user'     => 'dbadmin',
+          'password' => 'p1029384756d',
+          'dbname'   => 'db_zf_doctrine'
         )
       )
     )

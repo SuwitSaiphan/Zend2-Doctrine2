@@ -17,10 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `zf-doctrine`
+-- Database: `db_zf_doctrine`
 --
-CREATE DATABASE `zf-doctrine` DEFAULT CHARACTER SET utf8 COLLATE utf8_czech_ci;
-USE `zf-doctrine`;
+CREATE DATABASE `db_zf_doctrine` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
+USE `db_zf_doctrine`;
 
 -- --------------------------------------------------------
 
@@ -30,17 +30,21 @@ USE `zf-doctrine`;
 
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) CHARACTER SET latin1 NOT NULL,
-  `motto` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `motto` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci AUTO_INCREMENT=5 ;
+) 
+ENGINE=InnoDB  
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `motto`) VALUES
-(4, 'Tomas Kocfelda', 'I have never been clever because need it never.');
+INSERT INTO `tbl_users` (`id`, `name`, `motto`) VALUES
+(1, 'Tomas Kocfelda', 'I have never been clever because need it never.');
+INSERT INTO `tbl_users` (`id`, `name`, `motto`) VALUES
+(2, 'Suwit Saiphan', 'I have never been clever because need it never.');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
