@@ -41,9 +41,9 @@ DEFAULT CHARACTER SET=utf8 COLLATE=utf8_bin;
 -- Dumping data for table `users`
 --
 
-INSERT INTO `tbl_users` (`id`, `name`, `motto`) VALUES
+INSERT INTO `users` (`id`, `name`, `motto`) VALUES
 (1, 'Tomas Kocfelda', 'I have never been clever because need it never.');
-INSERT INTO `tbl_users` (`id`, `name`, `motto`) VALUES
+INSERT INTO `users` (`id`, `name`, `motto`) VALUES
 (2, 'Suwit Saiphan', 'I have never been clever because need it never.');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
